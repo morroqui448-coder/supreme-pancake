@@ -1,0 +1,15 @@
+strict digraph DfcCompiled_14_vein_gap {
+	root=a
+	ranksep=1
+	a [shape=box, label="id=a\nStart", tooltip="root.id=b\n"]
+	b -> a [label="root"]
+	b [shape=box, label="id=b\nroot", tooltip="delegate.id=c\n"]
+	c -> b [label="delegate"]
+	c [shape=hexagon, label="id=c\nGenericShiftedNoise", tooltip="inputX.id=d\ninputY.id=e\ninputZ.id=f\n"]
+	d -> c [label="inputX"]
+	e -> c [label="inputY"]
+	f -> c [label="inputZ"]
+	d [shape=triangle, label="id=d\nCoordinate X", tooltip=""]
+	e [shape=triangle, label="id=e\nCoordinate Y", tooltip=""]
+	f [shape=triangle, label="id=f\nCoordinate Z", tooltip=""]
+}

@@ -1,0 +1,27 @@
+strict digraph DfcCompiled_14_vein_gap_unoptimized {
+	root=a
+	ranksep=1
+	a [shape=box, label="id=a\nStart", tooltip="root.id=b\n"]
+	b -> a [label="root"]
+	b [shape=box, label="id=b\nroot", tooltip="delegate.id=c\n"]
+	c -> b [label="delegate"]
+	c [shape=hexagon, label="id=c\nGenericShiftedNoise", tooltip="inputX.id=d\ninputY.id=g\ninputZ.id=j\n"]
+	d -> c [label="inputX"]
+	g -> c [label="inputY"]
+	j -> c [label="inputZ"]
+	d [shape=parallelogram, label="id=d\nmul", tooltip="left.id=e\nright.id=f\n"]
+	e -> d [label="left"]
+	f -> d [label="right"]
+	e [shape=triangle, label="id=e\nCoordinate X", tooltip=""]
+	f [shape=triangle, label="id=f\n1.0", tooltip=""]
+	g [shape=parallelogram, label="id=g\nmul", tooltip="left.id=h\nright.id=i\n"]
+	h -> g [label="left"]
+	i -> g [label="right"]
+	h [shape=triangle, label="id=h\nCoordinate Y", tooltip=""]
+	i [shape=triangle, label="id=i\n1.0", tooltip=""]
+	j [shape=parallelogram, label="id=j\nmul", tooltip="left.id=k\nright.id=l\n"]
+	k -> j [label="left"]
+	l -> j [label="right"]
+	k [shape=triangle, label="id=k\nCoordinate Z", tooltip=""]
+	l [shape=triangle, label="id=l\n1.0", tooltip=""]
+}

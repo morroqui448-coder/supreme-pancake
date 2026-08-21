@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:stone_axe": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 6233,
+      "minecraft:walk_one_cm": 567,
+      "minecraft:total_world_time": 6233,
+      "minecraft:leave_game": 3,
+      "minecraft:play_time": 6233,
+      "minecraft:damage_dealt": 135,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 6233
+    },
+    "minecraft:broken": {
+      "minecraft:stone_axe": 1
+    },
+    "minecraft:used": {
+      "minecraft:stone_axe": 1
+    }
+  },
+  "DataVersion": 4903
+}

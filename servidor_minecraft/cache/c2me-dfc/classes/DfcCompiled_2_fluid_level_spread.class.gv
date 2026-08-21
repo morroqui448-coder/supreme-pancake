@@ -1,0 +1,19 @@
+strict digraph DfcCompiled_2_fluid_level_spread {
+	root=a
+	ranksep=1
+	a [shape=box, label="id=a\nStart", tooltip="root.id=b\n"]
+	b -> a [label="root"]
+	b [shape=box, label="id=b\nroot", tooltip="delegate.id=c\n"]
+	c -> b [label="delegate"]
+	c [shape=hexagon, label="id=c\nGenericShiftedNoise", tooltip="inputX.id=d\ninputY.id=e\ninputZ.id=h\n"]
+	d -> c [label="inputX"]
+	e -> c [label="inputY"]
+	h -> c [label="inputZ"]
+	d [shape=triangle, label="id=d\nCoordinate X", tooltip=""]
+	e [shape=parallelogram, label="id=e\nmul", tooltip="left.id=f\nright.id=g\n"]
+	f -> e [label="left"]
+	g -> e [label="right"]
+	f [shape=triangle, label="id=f\n0.7142857142857143", tooltip=""]
+	g [shape=triangle, label="id=g\nCoordinate Y", tooltip=""]
+	h [shape=triangle, label="id=h\nCoordinate Z", tooltip=""]
+}

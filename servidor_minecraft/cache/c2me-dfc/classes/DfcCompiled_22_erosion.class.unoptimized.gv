@@ -1,0 +1,11 @@
+strict digraph DfcCompiled_22_erosion_unoptimized {
+	root=a
+	ranksep=1
+	a [shape=box, label="id=a\nStart", tooltip="root.id=b\n"]
+	b -> a [label="root"]
+	b [shape=box, label="id=b\nroot", tooltip="delegate.id=c\n"]
+	c -> b [label="delegate"]
+	c [shape=folder, label="id=c\nCacheLike\nwrapping, cache_2d", tooltip="delegate.id=d\n"]
+	d -> c [label="delegate"]
+	d [shape=trapezium, label="id=d\nEndIslands", tooltip=""]
+}
